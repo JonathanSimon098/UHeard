@@ -13,7 +13,7 @@ export default function signin() {
   return (
     <View style={styles.container}>
       <UHeardText></UHeardText>
-      <Text style={styles.signIN}>SIGN IN</Text>
+      <Text style={styles.signIN}>Create a Username and Password</Text>
 
       <SafeAreaView>
         <TextInput
@@ -30,7 +30,7 @@ export default function signin() {
         />
       </SafeAreaView>
 
-      <Link href="/(tabs)/mainpage" asChild>
+      <Link href="/(tabs)/spotify_choose" asChild>
         <Pressable style={styles.button1}>
           <Text style={styles.continue}>CONTINUE</Text>
         </Pressable>
@@ -52,6 +52,7 @@ const styles = StyleSheet.create({
     fontSize: 30,
     fontWeight: "bold",
     margin: 50,
+    textAlign: 'center',
   },
   button1: {
     alignItems: 'center',

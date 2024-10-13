@@ -6,31 +6,24 @@ import EditScreenInfo from '@/components/EditScreenInfo';
 import { Text, View } from '@/components/Themed';
 import { UHeardText } from '@/components/StyledText';
 
-export default function signin() {
-  const [username, onChangeUsername] = React.useState('');
-  const [password, onChangePassword] = React.useState('');
+export default function schoolSelection() {
+  const [school, onChangeSchool] = React.useState('');
 
   return (
     <View style={styles.container}>
       <UHeardText></UHeardText>
-      <Text style={styles.signIN}>SIGN IN</Text>
+      <Text style={styles.signIN}>What School do you Attend?</Text>
 
       <SafeAreaView>
         <TextInput
           style={styles.input}
-          onChangeText={onChangeUsername}
-          value={username}
-          placeholder='Username'
-        />
-        <TextInput
-          style={styles.input}
-          onChangeText={onChangePassword}
-          value={password}
-          placeholder="Password"
+          onChangeText={onChangeSchool}
+          value={school}
+          placeholder='School Name'
         />
       </SafeAreaView>
 
-      <Link href="/(tabs)/mainpage" asChild>
+      <Link href="/(tabs)/signup" asChild>
         <Pressable style={styles.button1}>
           <Text style={styles.continue}>CONTINUE</Text>
         </Pressable>
@@ -52,6 +45,7 @@ const styles = StyleSheet.create({
     fontSize: 30,
     fontWeight: "bold",
     margin: 50,
+    textAlign: 'center',
   },
   button1: {
     alignItems: 'center',

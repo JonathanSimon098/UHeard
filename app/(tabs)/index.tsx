@@ -19,7 +19,7 @@ export default function TabOneScreen() {
         </Pressable>
       </Link>
 
-      <Link href="/modal" asChild>
+      <Link href="/(tabs)/school_selection" asChild>
         <Pressable style={styles.button2}>
           <Text style={styles.signUp}>SIGN UP WITH SCHOOL</Text>
         </Pressable>

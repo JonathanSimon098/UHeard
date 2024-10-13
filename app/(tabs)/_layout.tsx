@@ -42,6 +42,38 @@ export default function TabLayout() {
           headerShown: false,
         }}
       />
+      <Tabs.Screen
+        name="school_selection"
+        options={{
+          href: null,
+          tabBarStyle: {display: 'none'},
+          headerShown: false,
+        }}
+      />
+      <Tabs.Screen
+        name="signup"
+        options={{
+          href: null,
+          tabBarStyle: {display: 'none'},
+          headerShown: false,
+        }}
+      />
+      <Tabs.Screen
+        name="spotify_choose"
+        options={{
+          href: null,
+          tabBarStyle: {display: 'none'},
+          headerShown: false,
+        }}
+      />
+      <Tabs.Screen
+        name="access"
+        options={{
+          href: null,
+          tabBarStyle: {display: 'none'},
+          headerShown: false,
+        }}
+      />
     </Tabs>
   );
 }
